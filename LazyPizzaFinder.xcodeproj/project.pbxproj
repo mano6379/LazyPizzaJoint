@@ -21,6 +21,8 @@
 		D0EB747F18E35AE800211581 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EB746118E35AE800211581 /* UIKit.framework */; };
 		D0EB748718E35AE800211581 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0EB748518E35AE800211581 /* InfoPlist.strings */; };
 		D0EB748918E35AE800211581 /* LazyPizzaFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EB748818E35AE800211581 /* LazyPizzaFinderTests.m */; };
+		D0EB749318E35C3E00211581 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EB749218E35C3E00211581 /* MapKit.framework */; };
+		D0EB749518E35C4E00211581 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EB749418E35C4E00211581 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D0EB748418E35AE800211581 /* LazyPizzaFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LazyPizzaFinderTests-Info.plist"; sourceTree = "<group>"; };
 		D0EB748618E35AE800211581 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0EB748818E35AE800211581 /* LazyPizzaFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyPizzaFinderTests.m; sourceTree = "<group>"; };
+		D0EB749218E35C3E00211581 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D0EB749418E35C4E00211581 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB749518E35C4E00211581 /* CoreLocation.framework in Frameworks */,
+				D0EB749318E35C3E00211581 /* MapKit.framework in Frameworks */,
 				D0EB746018E35AE800211581 /* CoreGraphics.framework in Frameworks */,
 				D0EB746218E35AE800211581 /* UIKit.framework in Frameworks */,
 				D0EB745E18E35AE800211581 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		D0EB745C18E35AE800211581 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0EB749418E35C4E00211581 /* CoreLocation.framework */,
+				D0EB749218E35C3E00211581 /* MapKit.framework */,
 				D0EB745D18E35AE800211581 /* Foundation.framework */,
 				D0EB745F18E35AE800211581 /* CoreGraphics.framework */,
 				D0EB746118E35AE800211581 /* UIKit.framework */,
