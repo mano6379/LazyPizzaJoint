@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>908F7086-F546-434C-ABA2-9914A8598A9E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LazyPizzaFinder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE62AB09-7958-4002-9F17-A7D0F4934A8A</key>
+		<string>https://github.com/mano6379/LazyPizzaJoint.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LazyPizzaFinder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE62AB09-7958-4002-9F17-A7D0F4934A8A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mano6379/LazyPizzaJoint.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE62AB09-7958-4002-9F17-A7D0F4934A8A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE62AB09-7958-4002-9F17-A7D0F4934A8A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LazyPizzaFinder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

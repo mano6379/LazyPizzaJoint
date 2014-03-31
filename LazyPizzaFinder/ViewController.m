@@ -15,8 +15,10 @@
     //declare NSMutableArray because we will be adding pizza places.
     
     IBOutlet UITableView *myTableView;
+    //this is the pizzPlaces array (nearest to the user)
     NSArray *pizzaPlaces;
 }
+//the purpose of the CLLocationManager defines the interface for configuring the delivery of location
 @property CLLocationManager *locationManager;
 @end
 
@@ -26,6 +28,7 @@
 {
     [super viewDidLoad];
     self.locationManager = [CLLocationManager new];
+    //setting the locationmanager
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -113,6 +116,7 @@
         
         //sorting mapItems array to get the four nearest pizza places (which will show up at the beginning of the array)
         
+        //below we get the sorted list of mapItems in ascending order by distance
         mapItems = [mapItems sortedArrayUsingComparator:^NSComparisonResult(MKMapItem* obj1, MKMapItem* obj2) {
             float d1 = [obj1.placemark.location distanceFromLocation:self.locationManager.location];
             float d2 = [obj2.placemark.location distanceFromLocation:self.locationManager.location];
@@ -130,6 +134,7 @@
         }
         //NSInteger numberOfAvailablePizzePlaces;
         NSRange numberOfAvaiblePizzaPlaces;
+        //first you need to check if you have more than 4 pizza locations
         if (mapItems.count >= 4)
         {
             numberOfAvaiblePizzaPlaces = NSMakeRange(0, 4);
@@ -140,12 +145,13 @@
             numberOfAvaiblePizzaPlaces = NSMakeRange(0, mapItems.count);
             mapItems = [mapItems subarrayWithRange:numberOfAvaiblePizzaPlaces];
         }
+        
         NSLog(@"Closest Pizza places");
         for (MKMapItem* mapItem in mapItems) {
             NSLog(@"%f", [mapItem.placemark.location distanceFromLocation:self.locationManager.location]);
         }
-        pizzaPlaces = mapItems;
-        [myTableView reloadData];
+        pizzaPlaces = mapItems; //on four places
+        [myTableView reloadData]; //reload table view
         
         //MKMapItem *mapItem = mapItems.firstObject;
         //self.title = [NSString stringWithFormat:@"%@", mapItem.name];
